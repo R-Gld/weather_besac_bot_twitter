@@ -79,7 +79,7 @@ def actual_meteo(tweet: bool = True):
 def tweetTL(delete: bool = True):
     flore, rivotte = WUtils.createTL()
 
-    id_flore = api.upload(flore)
+    id_flore = api.media_upload(flore)
     id_rivotte = api.media_upload(rivotte)
 
     api.update_status(flore, "🎥 Timelapse de la journée:\n 📍 Place flore:",
